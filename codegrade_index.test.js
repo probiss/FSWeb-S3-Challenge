@@ -33,7 +33,7 @@ describe('index.html', () => {
     it('anasayfaya linklenen bir header başlığı bulundu', () => {
         const headerTitle = container.querySelector('h1').innerHTML;
         const headerTitleATag = container.querySelector('header a');
-        const regex = /ERGİNEER BAR VE MANGAL/i;
+        const regex = /ENGİNEER BAR VE MANGAL/i;
         expect(headerTitle).toMatch(regex);
         expect(headerTitleATag.href.includes('index.html')).toEqual(true);
     });
@@ -111,7 +111,7 @@ describe('index.html', () => {
         expect(getByText(footerNavLinks, /Menü/i)).toBeInTheDocument();
         expect(getByText(footerNavLinks, /Rezervasyonlar/i)).toBeInTheDocument();
         expect(getByText(footerNavLinks, /Özel Teklifler/i)).toBeInTheDocument();
-        expect(getByText(footerNavLinks, /Contact/i)).toBeInTheDocument();
+        expect(getByText(footerNavLinks, /İletişim/i)).toBeInTheDocument();
     });
 
     it('footerdaki Menü doğru sayfaya linklendirilmiş', async () => {
