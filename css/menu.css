@@ -69,11 +69,7 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 }
 
 h1 {
-    font-size: 0.5rem;
-    padding-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(0, 4, 17, .8);
+
 }
 
 h2 {
@@ -106,16 +102,25 @@ header {
     background-repeat: no-repeat;
 }
 
+header h1 {
+    text-align: center;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+header h1 a {
+    font-size: 3rem;
+}
+
 .container {
     background-color: rgb(0, 4, 17, .8);
 }
 
-.menu ul {
+.ustmenu ul {
     display: flex;
     padding-top: 1rem;
 }
 
-.menu ul li {
+.ustmenu ul li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +128,7 @@ header {
 
 }
 
-.menu ul li a {
+.ustmenu ul li a {
     color: rgb(225, 239, 230);
     font-size:1.2rem;
 }

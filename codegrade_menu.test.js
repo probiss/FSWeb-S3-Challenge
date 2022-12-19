@@ -33,7 +33,7 @@ describe('menu.html', () => {
     it('anasayfaya linklenen bir üst başlık bulundu', () => {
         const headerTitle = container.querySelector('h1').innerHTML;
         const headerTitleATag = container.querySelector('header a');
-        const regex = /ERGİNEER BAR VE MANGAL/i;
+        const regex = /ENGİNEER BAR VE MANGAL/i;
         expect(headerTitle).toMatch(regex);
         expect(headerTitleATag.href.includes('index.html')).toEqual(true);
     });

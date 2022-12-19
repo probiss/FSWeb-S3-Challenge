@@ -69,11 +69,7 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 }
 
 h1 {
-    font-size: 0.5rem;
-    padding-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(0, 4, 17, .8);
+    
 }
 
 h2 {
@@ -103,7 +99,14 @@ header {
 .container {
     background-color: rgb(0, 4, 17, .8);
 }
+header h1 {
+    text-align: center;
+    background-color: rgb(0, 4, 17, .8);
+}
 
+header h1 a {
+    font-size: 3rem;
+}
 .menu ul {
     display: flex;
     padding-top: 1rem;
