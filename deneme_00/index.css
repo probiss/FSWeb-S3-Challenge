@@ -1,0 +1,115 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.slider {
+    background: url(pictures/jumbo-restaurant.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+}
+
+.content p {
+    padding: 2rem;
+}
+
+nav {
+    position: fixed;
+    background: rgb(0, 4, 17, .8);
+    width: 100%;
+    height: 5rem;
+}
+
+nav #menuBtn {
+    display: none;
+}
+
+nav .menuBtn {
+    font-size: 2rem;
+    color: rgb(225, 239, 230);
+    float: right;
+    line-height: 5rem;
+    margin-right: 2rem;
+    display: none;
+
+}
+nav .logo {
+    color:#f1faee;
+    font-size: 1.8rem;
+    display: inline-block;
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+}
+
+nav ul {
+    float: right;
+    margin-right: 3rem;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 5rem;
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    color: rgb(225, 239, 230);
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: rgb(225, 239, 230);
+    color:black;
+}
+
+
+@media (max-width: 1024px) {
+
+    nav .menuBtn {
+        display: initial ;
+    }
+
+
+    nav ul {
+        position: fixed;
+        background: rgb(0, 4, 17, .8);
+        width: 100%;
+        height: calc(100vh - 5rem);
+        top:5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+        left:-100%;
+    }
+
+    nav ul li {
+        display: block;
+        min-width: 75%;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    nav #menuBtn:checked ~ ul{
+        left:0;
+    }
+
+    nav #menuBtn:checked ~ label.menuBtn i::before {
+        content: "\f00d";
+    }
+
+}

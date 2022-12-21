@@ -147,7 +147,7 @@ describe('menu.html', () => {
         });
     });
 
-    it('footerda beklenen textle bir input ve buton tagi tespit edildi', () => {
+    it('footerda beklenen textle bir input ve button tagi tespit edildi', () => {
         const footerInput = container.querySelector('footer input');
         const footerButton = container.querySelector('footer button');
 
